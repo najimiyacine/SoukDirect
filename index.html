@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SoukDirect — mutualisation intelligente du transport agricole frais entre Souss-Massa et Marrakech.">
+<title>SoukDirect — Le groupage agricole intelligent</title>
+<style>
+:root{--navy:#122a4a;--green:#287d53;--lime:#c6df78;--cream:#f7f7f1;--ink:#26303a;--muted:#687580;--line:#e3e9e2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+.nav{max-width:1160px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:850;color:var(--navy);font-size:1.35rem;letter-spacing:-.04em}.brand span{color:var(--green)}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font-size:.9rem;color:var(--muted);text-decoration:none}nav a:hover{color:var(--green)}
+.wrap{max-width:1160px;margin:auto;padding:0 22px}.hero{background:linear-gradient(115deg,var(--navy),#1c5d4a);color:white;padding:94px 0 86px;overflow:hidden}
+.kicker{color:var(--lime);font-weight:750;text-transform:uppercase;letter-spacing:.13em;font-size:.78rem}
+h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.02;letter-spacing:-.055em;max-width:850px;margin:18px 0}
+.hero p{font-size:1.18rem;color:#e2eee7;max-width:720px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:750;background:var(--lime);color:var(--navy)}
+.btn.secondary{background:transparent;color:white;border:1px solid #ffffff75}
+section{padding:76px 0;border-bottom:1px solid var(--line)}section.alt{background:var(--cream)}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:800}
+h2{font-size:clamp(1.9rem,4vw,3rem);line-height:1.1;letter-spacing:-.04em;color:var(--navy);margin:10px 0 18px}
+.lead{font-size:1.12rem;color:var(--muted);max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 28px #173a2510}
+.card h3{color:var(--green);margin:0 0 10px}.card p{margin:0;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.step{padding:20px;border-top:3px solid var(--lime);background:white;border-radius:0 0 12px 12px}
+.num{font-weight:900;color:var(--green);font-size:1.4rem}
+.pill{display:inline-block;background:#eaf2e9;color:var(--green);padding:5px 10px;border-radius:99px;font-size:.8rem;font-weight:750}
+.table{width:100%;border-collapse:collapse;margin-top:22px;background:white;border-radius:12px;overflow:hidden}
+.table th,.table td{text-align:left;padding:13px;border-bottom:1px solid var(--line)}.table th{background:var(--navy);color:white}
+.callout{background:var(--navy);color:white;border-radius:18px;padding:28px;margin-top:28px}.callout strong{color:var(--lime)}
+.flow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0}
+.node{padding:14px 18px;border:1px solid var(--line);border-radius:12px;background:white;font-weight:750;color:var(--navy)}
+.arrow{color:var(--green);font-weight:900}
+.notice{border-left:4px solid #df9a45;padding:14px 18px;background:#fff8ee;color:#674b27;border-radius:0 10px 10px 0}
+footer{background:#0d2038;color:#dce7df;padding:35px 0}footer a{color:var(--lime)}
+.small{font-size:.88rem;color:var(--muted)}.two{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+@media(max-width:850px){nav{display:none}.grid,.steps,.two{grid-template-columns:1fr}.hero{padding:68px 0}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="brand" href="#accueil">Souk<span>Direct</span></a>
+<nav><a href="#ideation">Idéation</a><a href="#solution">Solution digitale</a><a href="#implementation">Implémentation</a><a href="#marche">Marché</a><a href="#modele">Business model</a><a href="#impact">Impact & MVP</a></nav></div></header>
+<main>
+<div class="hero" id="accueil"><div class="wrap">
+<div class="kicker">Agri-tech · Agri-logistique numérique</div>
+<h1>Les petits lots.<br>Un transport mieux mutualisé.</h1>
+<p>SoukDirect conçoit un service numérique de consolidation des expéditions agricoles fraîches, reliant les petits producteurs de Souss-Massa aux acheteurs professionnels de Marrakech.</p>
+<div class="actions"><a class="btn" href="#solution">Découvrir la solution</a><a class="btn secondary" href="#implementation">Voir un exemple d'usage</a></div>
+</div></div>
+
+<section id="ideation"><div class="wrap">
+<div class="eyebrow">01 · Idéation</div><h2>Partir d'une friction concrète de la chaîne agricole</h2>
+<p class="lead">Les petits volumes peuvent être difficiles à transporter à un coût compétitif. En parallèle, les acheteurs doivent coordonner plusieurs fournisseurs et les transporteurs organiser des tournées rentables. SoukDirect formule l'hypothèse qu'une meilleure consolidation des lots compatibles peut améliorer cette coordination.</p>
+<div class="grid">
+<div class="card"><h3>Fragmentation de l'offre</h3><p>Des producteurs dispersés proposent des quantités parfois trop faibles pour justifier un transport dédié.</p></div>
+<div class="card"><h3>Coordination coûteuse</h3><p>Les acheteurs gèrent plusieurs commandes, provenances, horaires et réceptions.</p></div>
+<div class="card"><h3>Capacité à optimiser</h3><p>Le groupage peut mieux utiliser un véhicule, à condition que les arrêts et délais restent maîtrisés.</p></div>
+</div>
+<div class="notice" style="margin-top:24px">Ces constats sont des hypothèses de travail à valider par des entretiens et des expéditions pilotes. SoukDirect ne revendique pas de gains chiffrés déjà démontrés.</div>
+</div></section>
+
+<section class="alt" id="solution"><div class="wrap">
+<div class="eyebrow">02 · Solution digitale</div><h2>Smart Load Pooling : le groupage agricole intelligent</h2>
+<p class="lead">Une plateforme d'orchestration qui collecte les intentions d'expédition, détecte les compatibilités, propose une consolidation et suit l'exécution. SoukDirect vise à coordonner les transporteurs existants plutôt qu'à acheter sa propre flotte au démarrage.</p>
+<div class="steps">
+<div class="step"><div class="num">01</div><h3>Déclarer</h3><p>Produit, quantité, origine, destination, date, délai, emballage et exigences de conservation.</p></div>
+<div class="step"><div class="num">02</div><h3>Apparier</h3><p>Comparer les lots selon la route, les horaires, le véhicule, le produit et le point de réception.</p></div>
+<div class="step"><div class="num">03</div><h3>Optimiser</h3><p>Consolider les chargements, ordonner les arrêts et répartir les frais de manière transparente.</p></div>
+<div class="step"><div class="num">04</div><h3>Suivre</h3><p>Confirmer le transport, enregistrer les étapes et obtenir une preuve de livraison.</p></div>
+</div>
+<div class="callout"><strong>Règle de décision :</strong> ne pas maximiser le remplissage à tout prix. Le moteur doit minimiser le coût total et les risques, sous contraintes de capacité, de fraîcheur et de délais.</div>
+</div></section>
+
+<section id="implementation"><div class="wrap">
+<div class="eyebrow">03 · Exemples d'implémentation</div><h2>Un scénario de tournée mutualisée</h2>
+<p class="lead">Exemple pédagogique de 2 tonnes agrégées. Les volumes sont illustratifs et ne représentent pas des données de marché observées.</p>
+<table class="table"><thead><tr><th>Producteur</th><th>Produit</th><th>Lot</th></tr></thead><tbody>
+<tr><td>Producteur A</td><td>Tomates</td><td>450 kg</td></tr><tr><td>Producteur B</td><td>Tomates</td><td>350 kg</td></tr><tr><td>Producteur C</td><td>Courgettes</td><td>300 kg</td></tr><tr><td>Producteur D</td><td>Poivrons</td><td>400 kg</td></tr><tr><td>Producteur E</td><td>Tomates</td><td>500 kg</td></tr><tr><th colspan="2">Total</th><th>2 000 kg</th></tr>
+</tbody></table>
+<div class="flow"><div class="node">Producteurs</div><div class="arrow">→</div><div class="node">Regroupement</div><div class="arrow">→</div><div class="node">Transport mutualisé</div><div class="arrow">→</div><div class="node">Acheteurs Marrakech</div></div>
+<p class="small">Le moteur doit aussi vérifier le volume en m³, les emballages, les produits compatibles, la séquence des arrêts, les temps de chargement et les fenêtres de réception. Le poids seul ne suffit pas.</p>
+</div></section>
+
+<section class="alt" id="marche"><div class="wrap">
+<div class="eyebrow">04 · Marché pilote</div><h2>Souss-Massa → Marrakech</h2>
+<div class="two"><div><p class="lead">Le pilote vise une zone d'approvisionnement concentrée dans Souss-Massa et des acheteurs professionnels à Marrakech. Le bassin précis de collecte sera retenu après validation de la densité de producteurs et des flux.</p>
+<p><span class="pill">Offre</span> Petits producteurs, coopératives, points de regroupement et stations de conditionnement.</p>
+<p><span class="pill">Demande</span> Grossistes, primeurs, détaillants, restaurants, hôtels et distributeurs.</p></div>
+<div class="card"><h3>Produits prioritaires proposés</h3><p><b>1. Tomate</b> — produit d'appel.</p><p><b>2. Courgette</b> — complément maraîcher.</p><p><b>3. Poivron</b> — à intégrer selon compatibilité et demande.</p><p class="small">Concombre et agrumes pourront être étudiés dans une phase ultérieure.</p></div></div>
+</div></section>
+
+<section id="qualite"><div class="wrap">
+<div class="eyebrow">05 · Conservation & qualité</div><h2>Le groupage doit respecter le produit</h2>
+<div class="grid">
+<div class="card"><h3>Tomate</h3><p>Limiter chocs et écrasement ; adapter la température à la maturité et à la durée du trajet.</p></div>
+<div class="card"><h3>Courgette</h3><p>Éviter le froid excessif, réduire l'attente et protéger de la déshydratation.</p></div>
+<div class="card"><h3>Poivron</h3><p>Prévoir une manutention douce, un emballage adapté et une température appropriée.</p></div>
+</div>
+<p class="small">Les consignes précises doivent être validées par des spécialistes post-récolte et adaptées au lot. Aucun réglage unique n'est imposé à tous les produits.</p>
+</div></section>
+
+<section class="alt" id="modele"><div class="wrap">
+<div class="eyebrow">06 · Business model</div><h2>Une rémunération alignée sur le service rendu</h2>
+<div class="grid">
+<div class="card"><h3>Commission</h3><p>Commission sur les expéditions effectivement réalisées.</p></div>
+<div class="card"><h3>Frais de groupage</h3><p>Frais de coordination ou de consolidation par expédition ou par lot.</p></div>
+<div class="card"><h3>Abonnement professionnel</h3><p>Offre récurrente possible pour les acheteurs et transporteurs à volume régulier.</p></div>
+</div>
+<p class="lead" style="margin-top:26px">La répartition des coûts doit tenir compte du poids, du volume occupé, des détours, de la manutention et des contraintes de livraison. Les tarifs seront établis après tests réels.</p>
+</div></section>
+
+<section id="innovation"><div class="wrap">
+<div class="eyebrow">07 · Innovation & technologie</div><h2>Une optimisation spécialisée, pas une simple mise en relation</h2>
+<p class="lead">Le moteur envisagé traite un problème de tournées avec collectes et livraisons, capacités, fenêtres horaires et compatibilité des produits. Un premier prototype peut utiliser des règles explicites et un solveur d'optimisation ; l'apprentissage automatique n'interviendra qu'après constitution d'un historique fiable.</p>
+<div class="grid">
+<div class="card"><h3>Données</h3><p>Lots, volumes, localisation, disponibilité, destination, véhicule, délais et incidents.</p></div>
+<div class="card"><h3>Optimisation</h3><p>Compatibilité, remplissage poids/volume, ordre des arrêts, coût et risque.</p></div>
+<div class="card"><h3>Traçabilité</h3><p>Confirmation, statut d'expédition, preuve de livraison et réclamations.</p></div>
+</div>
+<p class="small">Technologies envisagées : interface web/mobile, API backend, base PostgreSQL/PostGIS, moteur d'optimisation de tournées, cartographie et notifications. Architecture indicative, non encore développée.</p>
+</div></section>
+
+<section class="alt" id="impact"><div class="wrap">
+<div class="eyebrow">08 · MVP & indicateurs</div><h2>Tester le service avant de construire toute la plateforme</h2>
+<div class="steps">
+<div class="step"><div class="num">Semaine 1</div><h3>Terrain</h3><p>Entretiens producteurs, acheteurs et transporteurs ; collecte de données réelles.</p></div>
+<div class="step"><div class="num">Semaine 2</div><h3>Prototype manuel</h3><p>Formulaires, tableur, carte et opérateur de consolidation.</p></div>
+<div class="step"><div class="num">Semaine 3</div><h3>Trajets tests</h3><p>Exécuter des expéditions pilotes avec partenaires à confirmer.</p></div>
+<div class="step"><div class="num">Semaine 4</div><h3>Évaluer</h3><p>Comparer les coûts, délais, pertes et réutilisation ; décider des fonctions à automatiser.</p></div>
+</div>
+<div class="grid">
+<div class="card"><h3>Économie nette / kg</h3><p>Coût de référence séparé comparé au coût mutualisé total, frais inclus.</p></div>
+<div class="card"><h3>Qualité de service</h3><p>Ponctualité, dommages, réclamations et respect des consignes.</p></div>
+<div class="card"><h3>Adoption</h3><p>Taux de répétition des producteurs, acheteurs et transporteurs.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="eyebrow">09 · Gouvernance & prochaines étapes</div><h2>Construire sur des preuves</h2>
+<p class="lead">Les partenaires, volumes, tarifs, gains, statut juridique et autorisations ne sont pas encore confirmés. Le projet devra clarifier le rôle exact de SoukDirect — intermédiaire numérique, organisateur de transport ou autre — avec un conseil juridique local et des assureurs avant toute commercialisation.</p>
+<div class="notice">Ce site est une présentation du concept pour la candidature et la discussion. Il ne permet pas encore de réserver un transport ni de conclure une transaction.</div>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="brand" style="color:white">Souk<span>Direct</span></div><p>Mutualiser les petits lots. Mieux acheminer les produits frais.</p><p class="small" style="color:#bdc9c4">Projet en phase de conception et de validation terrain · Maroc · <a href="#accueil">Retour en haut</a></p></div></footer>
+</body></html>
